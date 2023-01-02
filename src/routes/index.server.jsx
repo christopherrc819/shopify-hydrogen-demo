@@ -66,12 +66,14 @@ function HomepageContent() {
         title="Featured Products"
         divider="bottom"
       />
-      {secondaryHero && <Hero {...secondaryHero} />}
+
+
+      {/* {secondaryHero && <Hero {...secondaryHero} />}
       <FeaturedCollections
         data={featuredCollections.nodes}
         title="Collections"
       />
-      {tertiaryHero && <Hero {...tertiaryHero} />}
+      {tertiaryHero && <Hero {...tertiaryHero} />} */}
     </>
   );
 }

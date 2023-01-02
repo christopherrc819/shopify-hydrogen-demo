@@ -3,7 +3,7 @@ const PLACEHOLDERS = {
   HEROS: [
     // primaryHero
     {
-      heading: {value: 'All Mountain All Season'},
+      heading: {value: 'Summer Ready to Wear'},
       byline: {
         value: 'The All New Hydrogen Snowboard Exclusively From Shopify',
       },
@@ -12,14 +12,14 @@ const PLACEHOLDERS = {
       spread: {
         reference: {
           mediaContentType: 'IMAGE',
-          alt: 'Tracks in the snow leading to a person on a mountain top with a red jacket contrasting to an epic blue horizon with a mountain range in the distance.',
+          alt: 'female red sweater fashion model',
           previewImage: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
+            url: 'https://i.imgur.com/hfdWR1F.jpg',
           },
           id: 'gid://shopify/MediaImage/29259478466616',
           image: {
-            url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Hydrogen_Hero_Feature_1.jpg?v=1654902468',
-            width: 2500,
+            url: 'https://i.imgur.com/hfdWR1F.jpg',
+            width: 5000,
             height: 3155,
           },
         },
@@ -45,10 +45,10 @@ const PLACEHOLDERS = {
     },
     // secondaryHero
     {
-      heading: {value: 'The Winter 2022 Collection'},
+      heading: {value: 'Fall Winter Collection'},
       byline: {value: 'Just Dropped'},
       cta: {value: 'Shop Now →'},
-      handle: 'winter-2022',
+      handle: 'winter-2023',
       spread: {
         reference: {
           mediaContentType: 'IMAGE',

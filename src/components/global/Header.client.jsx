@@ -1,5 +1,6 @@
 import {Link, useUrl, useCart} from '@shopify/hydrogen';
 import {useWindowScroll} from 'react-use';
+import {Image} from '@shopify/hydrogen'
 
 import {
   Heading,
@@ -66,11 +67,11 @@ function MobileHeader({countryCode, title, isHome, openCart, openMenu}) {
     button: 'relative flex items-center justify-center w-8 h-8',
     container: `${
       isHome
-        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darkHeader'
+        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary'
         : 'bg-contrast/80 text-primary'
     } ${
       y > 50 && !isHome ? 'shadow-lightHeader ' : ''
-    }flex lg:hidden items-center h-nav sticky backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-4 px-4 md:px-8`,
+    }flex lg:hidden items-center h-nav sticky z-40 top-0 justify-between w-full leading-none gap-4 px-4 md:px-8`,
   };
 
   return (
@@ -130,15 +131,16 @@ function DesktopHeader({countryCode, isHome, menu, openCart, title}) {
       'relative flex items-center justify-center w-8 h-8 focus:ring-primary/5',
     container: `${
       isHome
-        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darkHeader'
+        ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary'
         : 'bg-contrast/80 text-primary'
     } ${
       y > 50 && !isHome ? 'shadow-lightHeader ' : ''
-    }hidden h-nav lg:flex items-center sticky transition duration-300 backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-8 px-12 py-8`,
+    }hidden h-nav lg:flex items-center sticky transition duration-300 z-40 top-0 justify-between w-full leading-none gap-8 px-12 py-8`,
   };
 
   return (
     <header role="banner" className={styles.container}>
+      <Image className='fill' src="https://i.imgur.com/LsVHcwI.png" alt={'logo'} width={50} height={50} />
       <div className="flex gap-12">
         <Link className={`font-bold`} to="/">
           {title}
